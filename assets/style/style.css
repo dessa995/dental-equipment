@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: nome;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.company-logo {
+  margin-top: 12px;
+  height: 50px;
+  width: 50px;
+}
+
+.header-navbar {
+  display: flex;
+  gap: 5px;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-item {
+  border-right: 0.1px solid rgba(36, 34, 34, 0.384);
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.navbar-icon {
+  margin-right: 5px;
+  border-radius: 50%;
+  text-align: center;
+  color: #0a3f5f;
+  font-weight: bold;
+}
+
+.navbar-text {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0a3f5f;
+}
+
+.login-button {
+  background-color: #ffe383;
+  color: rgba(29, 25, 25, 0.795);
+  font-size: 20px;
+  font-weight: bold;
+  width: 140px;
+  height: 50px;
+  margin: 15px 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.heading-div {
+  background-color: #235574;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.main-heading {
+  color: rgba(240, 248, 255, 0.877);
+}
+
+.main-heading-paragraph {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.877);
+}
+
+.home-offers-slider {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.slide-content {
+  background-size: cover;
+  background-repeat: round;
+  height: 400px;
+  width: 700px;
+  border-radius: 20px;
+  margin-right: 20px;
+  -webkit-box-shadow: 2px 8px 19px -4px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 2px 8px 19px -4px rgba(0, 0, 0, 0.35);
+  box-shadow: 2px 8px 19px -4px rgba(0, 0, 0, 0.35);
+}
+
+.slider1 {
+  background-image: url("../images/chares-and-more.jpg");
+}
+.slider2 {
+  background-image: url("../images/implant-examples.jpg");
+}
+.slider3 {
+  background-image: url("../images/turbines-and-equipment.jpg");
+}
+.slider4 {
+  background-image: url("../images/hand-tools.jpg");
+}
+.slider5 {
+  background-image: url("../images/orthodontic-materials.jpg");
+}
+.slider6 {
+  background-image: url("../images/orthodontic-wire-meterials.jpg");
+}
+.slider7 {
+  background-image: url("../images/color-keys.jpg");
+}
+.slider8 {
+  background-image: url("../images/example-models.jpg");
+}
