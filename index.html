@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="header-nav">
+      <div class="header-nav" id="home">
         <img src="assets/images/logo-dental-removebg-preview.png" class="company-logo" />
         <div class="header-navbar">
           <ul class="nav-bar">
@@ -69,23 +69,34 @@
         <a href="#" class="nav-link">Home</a>
       </div>
       <div class="nav-browse-div nav-div">
-        <a href="#" class="nav-link">Browse
-          <div class="nav-link-drop-div">
-            <a class="nav-link-drop-menu" href="#">Chairs and equipment</a>
-            <a class="nav-link-drop-menu" href="#">X-ray cammeras</a>
-            <a class="nav-link-drop-menu" href="#">3D oral scanners</a>
-            <a class="nav-link-drop-menu" href="#">stomatology conservative</a>
-            <a class="nav-link-drop-menu" href="#">Orthodontics</a>
-            <a class="nav-link-drop-menu" href="#"~~>Other</a>
+        <a class="browse-link" href="javascript:;">
+          <p class="nav-link">Browse</p>
+            <div class="nav-browse-drop-menu">
+            <a class="nav-drop-menu-link" href="#">Chairs and equipment</a>
+            <a class="nav-drop-menu-link" href="#">X-ray cammeras</a>
+            <a class="nav-drop-menu-link" href="#">3D oral scanners</a>
+            <a class="nav-drop-menu-link" href="#">stomatology conservative</a>
+            <a class="nav-drop-menu-link" href="#">Orthodontics</a>
+            <a class="nav-drop-menu-link" href="#">Other</a>
           </div>
         </a>
       </div>
       <div class="nav-recommended-div nav-div">
-        <a href="#" class="nav-link">Recommended</a>
-      </div>
-      <div class="nav-contact-div nav-div">
-        <a href="#" class="nav-link">Contact</a>
-      </div>
+        <a href="#" class="recommended-link">
+          <p class="nav-link">Recommended</p>
+          <div class="nav-recommended-drop-menu">
+            <a href="#" class="nav-drop-menu-link">Newest in store</a>
+            <a href="#" class="nav-drop-menu-link">Top quality</a>
+            <a href="#" class="nav-drop-menu-link">Monthly sale</a>
+            <a href="#" class="nav-drop-menu-link">Limited time offer</a>
+          </div>
+        </a>
+        </div>
+        <div class="nav-contact-div nav-div">
+          <a href="#footer" class="nav-link">
+          <p>Contact</p>
+        </a>
+        </div>
     </div>
   </div>
   </header>
@@ -159,7 +170,45 @@
         </a>
       </div>
     </article>
-    <footer></footer>
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-logo-div">
+          <img src="assets/images/logo-dental-removebg-preview-gray.png" 
+          class="footer-logo"/>
+          <h1 class="footer-heading">Be a Dentist!</h1>
+        </div>
+        <div class="contact-div">
+          <div class="footer-p-div">
+          <p class="footer-paragraph">Contact tel:</p>
+          </div>
+          <ul class="tel-list">
+            <li class="footer-li">060/221-46-62</li>
+            <li class="footer-li">165/162-58-36</li>
+            <li class="footer-li">546/546-89-66</li>
+          </ul>
+        </div>
+        <div class="contact-div">
+          <div class="footer-p-div">
+            <p class="footer-paragraph">Locations:</p>
+          </div>
+          <ul class="location-list">
+            <li class="footer-li">adfwa 654</li>
+            <li class="footer-li">awdawd 54</li>
+            <li class="footer-li">asfaw 4</li>
+          </ul>
+        </div>
+        <div class="contact-div">
+          <div class="footer-link-div">
+            <a class="footer-email-link" href="#">
+              <p class="footer-paragraph footer-email-link">Via E-mail</p>
+            </a>
+            <a class="footer-email-link" href="#home">
+              <p class="footer-paragraph footer-email-link">Home Page</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/scripts/slick.min.js"></script>
     <script src="assets/scripts/slick.js"></script>

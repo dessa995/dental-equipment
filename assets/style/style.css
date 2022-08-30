@@ -81,6 +81,12 @@ a {
   border-radius: 4px;
 }
 
+.login-button:hover {
+  background-color: #009fd6;
+  color: #dcdfe0;
+  cursor: pointer;
+}
+
 .nav-menu-div {
   justify-content: space-between;
   height: 50px;
@@ -93,7 +99,7 @@ a {
 
 .nav-items-div {
   display: flex;
-  width: 400px;
+  width: 450px;
   height: 50px;
   margin-left: auto;
   margin-right: 8%;
@@ -103,6 +109,9 @@ a {
 .nav-div {
   padding-right: 15px;
   padding-left: 10px;
+}
+
+.browse-link .recommended-link {
   position: relative;
 }
 
@@ -116,14 +125,38 @@ a {
   background-color: #007b9a;
 }
 
-.nav-link-drop-div {
+.nav-drop-menu-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.89);
+  padding: 0 10px;
+}
+
+.nav-drop-menu-link:hover {
+  color: #dcdfe0;
+}
+
+.nav-browse-drop-menu {
   display: none;
 }
 
-.nav-link-drop-visable {
+.nav-browse-drop-menu-visable {
   display: block;
   position: absolute;
-  width: 140px;
+  margin-top: 0;
+  width: 250px;
+  background-color: #27c7d7;
+}
+
+.nav-recommended-drop-menu {
+  display: none;
+}
+
+.nav-recommended-drop-menu-visable {
+  display: block;
+  position: absolute;
+  margin-top: 0;
+  width: 250px;
+  background-color: #27c7d7;
 }
 
 .home-offers-slider {
@@ -235,6 +268,7 @@ a {
   width: 900px;
   margin-left: 3%;
   margin-right: auto;
+  margin-bottom: 50px;
   text-align: center;
   border-radius: 20px;
   -webkit-box-shadow: 2px 8px 19px -4px rgba(0, 0, 0, 0.35);
@@ -254,4 +288,58 @@ a {
   font-size: 25px;
   font-weight: bold;
   text-shadow: 2px 2px 8px #000;
+}
+
+.footer-container {
+  display: flex;
+  background-color: #007b9a;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-logo-div {
+  display: flex;
+  margin-right: 10px;
+  justify-content: space-evenly;
+}
+
+.footer-logo {
+  height: 75px;
+  width: 75px;
+  margin-right: 10px;
+}
+
+.footer-heading {
+  line-height: 250%;
+  font-size: 30px;
+  color: #979696;
+}
+
+.footer-p-div {
+  display: flex;
+  margin-right: 10px;
+}
+
+.footer-paragraph {
+  font-size: 15px;
+  color: #bbb9b9;
+  font-size: 20px;
+}
+
+.footer-li {
+  color: #bbb9b9;
+}
+
+.contact-div {
+  display: flex;
+  margin-right: 20px;
+  text-align: start;
+}
+
+.footer-link-div {
+}
+
+.footer-email-link:hover {
+  cursor: pointer;
+  color: #979696;
 }

@@ -7,4 +7,14 @@ $(document).ready(function () {
     autoplaySpeed: 5000,
     variableWidth: true,
   });
+
+  $(".nav-browse-div").hover(function () {
+    $(".nav-browse-drop-menu").toggleClass("nav-browse-drop-menu-visable");
+  });
+
+  $(".nav-recommended-div").hover(function () {
+    $(".nav-recommended-drop-menu").toggleClass(
+      "nav-recommended-drop-menu-visable"
+    );
+  });
 });
