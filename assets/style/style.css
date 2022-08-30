@@ -85,13 +85,16 @@ a {
   justify-content: space-between;
   height: 50px;
   background-color: #009fd6;
-  margin-bottom: 20px;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 .nav-items-div {
   display: flex;
   width: 400px;
+  height: 50px;
   margin-left: auto;
   margin-right: 8%;
   line-height: 50px;
@@ -100,6 +103,7 @@ a {
 .nav-div {
   padding-right: 15px;
   padding-left: 10px;
+  position: relative;
 }
 
 .nav-link {
@@ -108,12 +112,27 @@ a {
   font-weight: bold;
 }
 
+.nav-div:hover {
+  background-color: #007b9a;
+}
+
+.nav-link-drop-div {
+  display: none;
+}
+
+.nav-link-drop-visable {
+  display: block;
+  position: absolute;
+  width: 140px;
+}
+
 .home-offers-slider {
   display: flex;
   width: 100%;
   height: 400px;
   margin-bottom: 100px;
   gap: 20px;
+  margin-top: 50px;
 }
 
 .slide-content {
