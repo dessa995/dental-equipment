@@ -21,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+.fa {
+  display: inline;
+  margin-left: 5px;
+}
+
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -116,6 +121,7 @@ a {
 }
 
 .nav-link {
+  display: inline;
   color: rgba(255, 255, 255, 0.89);
   font-size: 20px;
   font-weight: bold;
@@ -152,6 +158,18 @@ a {
 }
 
 .nav-recommended-drop-menu-visable {
+  display: block;
+  position: absolute;
+  margin-top: 0;
+  width: 250px;
+  background-color: #27c7d7;
+}
+
+.nav-contact-drop-menu {
+  display: none;
+}
+
+.nav-contact-drop-menu-visable {
   display: block;
   position: absolute;
   margin-top: 0;
@@ -334,9 +352,6 @@ a {
   display: flex;
   margin-right: 20px;
   text-align: start;
-}
-
-.footer-link-div {
 }
 
 .footer-email-link:hover {

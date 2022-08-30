@@ -17,4 +17,8 @@ $(document).ready(function () {
       "nav-recommended-drop-menu-visable"
     );
   });
+
+  $(".nav-contact-div").hover(function () {
+    $(".nav-contact-drop-menu").toggleClass("nav-contact-drop-menu-visable");
+  });
 });
