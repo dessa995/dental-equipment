@@ -21,4 +21,23 @@ $(document).ready(function () {
   $(".nav-contact-div").hover(function () {
     $(".nav-contact-drop-menu").toggleClass("nav-contact-drop-menu-visable");
   });
+
+  const body = document.body;
+  const scrollUpClass = "body--scroll-up";
+
+  const lastScroll = 0;
+
+  window.addEventListener("scroll", function () {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll <= 0) {
+      body.classList.remove(scrollUpClass);
+      return;
+    }
+
+    if (currentScroll > lastScroll) {
+      body.classList.add(scrollUpClass);
+    }
+    lastScroll = currentScroll;
+  });
 });

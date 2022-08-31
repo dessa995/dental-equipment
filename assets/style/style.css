@@ -94,12 +94,16 @@ a {
 
 .nav-menu-div {
   justify-content: space-between;
-  height: 50px;
   background-color: #009fd6;
   width: 100%;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 9999;
+  transition: 0.2s ease-in;
+}
+
+.body--scroll-up .nav-menu-div {
+  position: fixed;
+  transform: translateY(-81px);
 }
 
 .nav-items-div {
@@ -284,6 +288,7 @@ a {
 }
 
 .interview-div {
+  display: flex;
   background-image: url("../images/handshake.jpg");
   background-size: cover;
   height: 400px;
@@ -291,6 +296,7 @@ a {
   margin-left: 3%;
   margin-right: auto;
   margin-bottom: 50px;
+  align-items: center;
   text-align: center;
   border-radius: 20px;
   -webkit-box-shadow: 2px 8px 19px -4px rgba(0, 0, 0, 0.35);
@@ -300,20 +306,27 @@ a {
 
 .interview-heading {
   color: #f0f8ff;
-  line-height: 200px;
+  margin-top: -50px;
   font-size: 40px;
   text-shadow: 2px 2px 8px #000;
 }
 
 .interview-paragraph {
+  margin-top: 80px;
   color: #f0f8ff;
   font-size: 25px;
   font-weight: bold;
   text-shadow: 2px 2px 8px #000;
 }
 
+.article-link:hover * {
+  color: #bbb9b9;
+}
+
 .footer-container {
   display: flex;
+  width: 100%;
+  padding: 50px;
   background-color: #007b9a;
   align-items: center;
   justify-content: space-evenly;
