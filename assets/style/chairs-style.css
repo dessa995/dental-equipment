@@ -34,25 +34,21 @@
 }
 
 .list-item-heading-div {
-  width: 180px;
+  width: 220px;
 }
 
 .chair-list-heading {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: #27c7d7;
   padding: 40px 0px;
-}
-
-.description-div {
-  /* width: 180px; */
 }
 
 .li-description-p {
   display: flex;
   flex-direction: row;
   padding: 20px 0px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   color: #27c7d7;
 }
@@ -66,15 +62,3 @@
   position: relative;
 }
 
-.aside-div {
-  position: fixed;
-  top: 250px;
-  right: 0;
-  display: block;
-  margin: 10px;
-  border-top: 5px solid #007b9a;
-  border-bottom: 5px solid #007b9a;
-  background-color: #27c7d7;
-  width: 200px;
-  height: 300px;
-}

@@ -40,4 +40,23 @@ $(document).ready(function () {
     }
     lastScroll = currentScroll;
   });
+
+    const firstName = document.querySelector(".first-name-textarea");
+    const lastName = document.querySelector(".last-name-textarea");
+    const phoneNumber = document.querySelector(".phone-number-textarea");
+    const email = document.querySelector(".email-textarea");
+    const messageContent = document.querySelector(".message-textarea");
+    const submitButton = document.querySelector(".contact-submit-button");
+ 
+
+
+  submitButton.addEventListener("click", function() {
+    const firstNameValue = firstName.value;
+    const lastNameValue = lastName.value;
+    const phoneNumberValue = phoneNumber.value;
+    const emailValue = email.value;
+    const messageValue = messageContent.value;
+    alert(`${firstNameValue} ${lastNameValue} ${phoneNumberValue} ${emailValue} ${messageValue}`);
+  });
+
 });
