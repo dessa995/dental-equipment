@@ -1,0 +1,37 @@
+.faq-main-heading {
+  font-size: 50px;
+  color: #009fd6;
+  text-shadow: 4px 4px 12px #fff;
+  margin: 20px 0;
+}
+
+.all-questions-div {
+  width: 600px;
+  margin: 50px;
+  margin-left: 5%;
+  margin-right: auto;
+}
+
+.all-questions-div .ui-accordion-header {
+  font-size: 20px;
+  padding: 30px 0;
+  background-color: #009fd6;
+  color: #ffffffe8;
+}
+
+.all-questions-div .ui-accordion-header:hover {
+  box-shadow: inset 0 0 15px rgb(87, 86, 86);
+  color: #dcdfe0;
+  cursor: pointer;
+}
+
+.all-questions-div .ui-accordion-content {
+  background-color: #007b9a;
+  color: #ffffffe8;
+  border: 2px solid #fff;
+  padding: 50px 0;
+}
+
+.question-heading {
+  font-weight: bold;
+}

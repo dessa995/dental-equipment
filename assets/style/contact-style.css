@@ -1,5 +1,74 @@
 .contact-heading {
-  font-size: 30px;
+  font-size: 50px;
   color: #009fd6;
   text-shadow: 4px 4px 12px #fff;
+  margin: 20px 0;
+}
+
+.contact-input-div {
+  width: 700px;
+  margin-left: 5%;
+  margin-right: auto;
+}
+
+.first-name-textarea {
+  background-color: transparent;
+  width: 300px;
+  height: 80px;
+  font-size: 20px;
+  border: 3px solid #009fd6;
+  border-bottom: none;
+}
+
+.last-name-textarea {
+  background-color: transparent;
+  width: 300px;
+  height: 80px;
+  font-size: 20px;
+  border: 3px solid #009fd6;
+  border-bottom: none;
+}
+
+.phone-number-textarea {
+  background-color: transparent;
+  width: 300px;
+  height: 80px;
+  font-size: 20px;
+  border: 3px solid #009fd6;
+  border-bottom: none;
+}
+
+.email-textarea {
+  background-color: transparent;
+  width: 300px;
+  height: 80px;
+  font-size: 20px;
+  border: 3px solid #009fd6;
+  border-bottom: none;
+}
+
+.message-textarea {
+  background-color: transparent;
+  width: 604px;
+  height: 200px;
+  font-size: 20px;
+  border: 3px solid #009fd6;
+}
+
+.contact-submit-button {
+  border: none;
+  width: 300px;
+  height: 80px;
+  background-color: #27c7d7;
+  color: #ffffffe8;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 60px 120px;
+}
+
+.contact-submit-button:hover {
+  background-color: #009fd6;
+  color: #dcdfe0;
+  cursor: pointer;
 }

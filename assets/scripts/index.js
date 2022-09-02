@@ -50,13 +50,24 @@ $(document).ready(function () {
  
 
 
-  submitButton.addEventListener("click", function() {
+  submitButton.addEventListener("click", function myFunction() {
     const firstNameValue = firstName.value;
     const lastNameValue = lastName.value;
     const phoneNumberValue = phoneNumber.value;
     const emailValue = email.value;
     const messageValue = messageContent.value;
     alert(`${firstNameValue} ${lastNameValue} ${phoneNumberValue} ${emailValue} ${messageValue}`);
+  });
+
+  $(messageContent).keypress(function(e) {
+    if(e.which == 13) {
+      const firstNameValue = firstName.value;
+      const lastNameValue = lastName.value;
+      const phoneNumberValue = phoneNumber.value;
+      const emailValue = email.value;
+      const messageValue = messageContent.value;
+      alert(`${firstNameValue} ${lastNameValue} ${phoneNumberValue} ${emailValue} ${messageValue}`);
+    }
   });
 
 });
