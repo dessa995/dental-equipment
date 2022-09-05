@@ -197,7 +197,7 @@ a {
 .slide-content {
   background-size: cover;
   background-repeat: round;
-  height: 400px;
+  height: 380px;
   width: 600px;
   border-radius: 20px;
   margin-right: 20px;
@@ -263,6 +263,7 @@ a {
 }
 
 .news-div {
+  display: flex;
   background-image: url("../images/light.jpg");
   background-size: cover;
   height: 400px;
@@ -271,6 +272,7 @@ a {
   margin-right: 3%;
   margin-bottom: 50px;
   text-align: center;
+  justify-content: center;
   border-radius: 20px;
   -webkit-box-shadow: 2px 8px 19px -4px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 2px 8px 19px -4px rgba(0, 0, 0, 0.35);
@@ -279,7 +281,7 @@ a {
 
 .news-heading {
   color: #f0f8ff;
-  line-height: 200px;
+  margin: 50px 0;
   font-size: 40px;
   text-shadow: 2px 2px 8px #000;
 }
@@ -323,6 +325,10 @@ a {
   text-shadow: 2px 2px 8px #000;
 }
 
+.article-link {
+  text-align: center;
+}
+
 .article-link:hover * {
   color: #bbb9b9;
 }
@@ -336,9 +342,8 @@ a {
   margin-right: 3%;
   margin-left: auto;
   margin-bottom: 50px;
-  padding-left: 80px;
-  /* align-items: center; */
   text-align: center;
+  justify-content: center;
   border-radius: 20px;
   -webkit-box-shadow: 2px 8px 19px -4px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 2px 8px 19px -4px rgba(0, 0, 0, 0.35);
@@ -347,7 +352,7 @@ a {
 
 .lecture-heading {
   color: #f0f8ff;
-  margin-top: 80px;
+  margin-top: 60px;
   font-size: 40px;
   text-shadow: 2px 2px 8px #000;
 }
@@ -362,7 +367,7 @@ a {
 
 .aside-div {
   position: absolute;
-  top: 37vh;
+  top: 43vh;
   right: 0;
   display: block;
   margin: 10px;
@@ -370,21 +375,21 @@ a {
   border-bottom: 5px solid #007b9a;
   background-color: #27c7d7;
   text-align: center;
-  width: 240px;
-  height: 450px;
+  width: 200px;
+  height: 400px;
   z-index: 9999;
   transition: 0.2s ease-in;
 }
 
 .aside-heading {
   color: #ffffffe8;
-  font-size: 23px;
-  padding: 60px 0px;
+  font-size: 20px;
+  padding: 45px 0px;
 }
 
 .aside-paragraph {
   color: #ffffffe8;
-  font-size: 20px;
+  font-size: 18px;
   padding: 20px 0px;
 }
 
@@ -397,7 +402,6 @@ a {
   position: fixed;
   transform: translateY(-81px);
 }
-
 
 .footer-container {
   display: flex;
@@ -451,3 +455,150 @@ a {
   cursor: pointer;
   color: #979696;
 }
+
+.menu-icon-div {
+  display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .header-nav {
+    width: 900px;
+  }
+
+  .nav-menu-div {
+    width: auto;
+  }
+
+  .nav-items-div {
+    /* width: auto; */
+  }
+
+  .nav-div {
+    /* width: auto; */
+  }
+
+  .nav-link {
+    font-size: large;
+  }
+
+  .news-div {
+    height: 400px;
+    width: 800px;
+  }
+
+  .lecture-div {
+    height: 400px;
+    width: 800px;
+  }
+
+  .interview-div {
+    height: 400px;
+    width: 800px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-nav {
+    width: 700px;
+  }
+
+  .news-div {
+    height: 350px;
+    width: 600px;
+  }
+
+  .lecture-div {
+    height: 350px;
+    width: 600px;
+  }
+
+  .interview-div {
+    height: 350px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-nav {
+    width: 600px;
+    justify-content: space-between;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .login-button {
+    display: none;
+  }
+
+  .nav-bar-item {
+    display: none;
+  }
+
+  .fa-2x {
+    display: none;
+  }
+
+  .menu-icon-div {
+    display: flex;
+    height: 75px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fa {
+    font-size: 30px;
+    color: #009fd6;
+  }
+
+  .about-us-link-div {
+    display: none;
+  }
+  .faq-link-div {
+    display: none;
+  }
+  .location-link-div {
+    display: none;
+  }
+
+  .news-div {
+    height: 300px;
+    width: 400px;
+  }
+
+  .news-heading {
+    font-size: 30px;
+  }
+
+  .news-paragraph {
+    font-size: 20px;
+  }
+
+  .lecture-div {
+    height: 300px;
+    width: 400px;
+  }
+
+  .lecture-heading {
+    font-size: 30px;
+  }
+
+  .lecture-paragraph {
+    font-size: 20px;
+  }
+
+  .interview-div {
+    height: 300px;
+    width: 400px;
+  }
+
+  .interview-heading {
+    font-size: 30px;
+  }
+
+  .interview-paragraph {
+    font-size: 20px;
+  }
+} ;
