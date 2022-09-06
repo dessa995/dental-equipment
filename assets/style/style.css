@@ -520,13 +520,21 @@ a {
     display: none;
   }
 
-  .nav-bar-item {
-    border: none;
-  }
-
   .nav-bar-active {
     display: flex;
     margin-top: 80px;
+  }
+
+  .nav-menu-div {
+    display: block;
+  }
+
+  .nav-items-div {
+    display: block;
+  }
+
+  .nav-div {
+    background-color: #009fd6;
   }
 
   .nav-link {
@@ -639,4 +647,4 @@ a {
   .interview-paragraph {
     font-size: 20px;
   }
-} ;
+}

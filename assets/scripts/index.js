@@ -9,7 +9,8 @@ $(document).ready(function () {
   });
 
   $(".nav-browse-div").hover(function () {
-    $(".nav-browse-drop-menu").toggleClass("nav-browse-drop-menu-visable");
+    if ($(window).width() > 768)
+      $(".nav-browse-drop-menu").toggleClass("nav-browse-drop-menu-visable");
   });
 
   $(".nav-browse-div").click(function () {
@@ -17,9 +18,10 @@ $(document).ready(function () {
   });
 
   $(".nav-recommended-div").hover(function () {
-    $(".nav-recommended-drop-menu").toggleClass(
-      "nav-recommended-drop-menu-visable"
-    );
+    if ($(window).width() > 768)
+      $(".nav-recommended-drop-menu").toggleClass(
+        "nav-recommended-drop-menu-visable"
+      );
   });
 
   $(".nav-recommended-div").click(function () {
@@ -29,7 +31,8 @@ $(document).ready(function () {
   });
 
   $(".nav-contact-div").hover(function () {
-    $(".nav-contact-drop-menu").toggleClass("nav-contact-drop-menu-visable");
+    if ($(window).width() > 768)
+      $(".nav-contact-drop-menu").toggleClass("nav-contact-drop-menu-visable");
   });
 
   $(".nav-contact-div").click(function () {
