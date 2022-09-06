@@ -12,7 +12,17 @@ $(document).ready(function () {
     $(".nav-browse-drop-menu").toggleClass("nav-browse-drop-menu-visable");
   });
 
+  $(".nav-browse-div").click(function () {
+    $(".nav-browse-drop-menu").toggleClass("nav-browse-drop-menu-visable");
+  });
+
   $(".nav-recommended-div").hover(function () {
+    $(".nav-recommended-drop-menu").toggleClass(
+      "nav-recommended-drop-menu-visable"
+    );
+  });
+
+  $(".nav-recommended-div").click(function () {
     $(".nav-recommended-drop-menu").toggleClass(
       "nav-recommended-drop-menu-visable"
     );
@@ -20,6 +30,14 @@ $(document).ready(function () {
 
   $(".nav-contact-div").hover(function () {
     $(".nav-contact-drop-menu").toggleClass("nav-contact-drop-menu-visable");
+  });
+
+  $(".nav-contact-div").click(function () {
+    $(".nav-contact-drop-menu").toggleClass("nav-contact-drop-menu-visable");
+  });
+
+  $(".nav-bar-menu-icon-link").click(function () {
+    $(".nav-bar").toggleClass("nav-bar-active");
   });
 
   const body = document.body;
@@ -41,14 +59,12 @@ $(document).ready(function () {
     lastScroll = currentScroll;
   });
 
-    const firstName = document.querySelector(".first-name-textarea");
-    const lastName = document.querySelector(".last-name-textarea");
-    const phoneNumber = document.querySelector(".phone-number-textarea");
-    const email = document.querySelector(".email-textarea");
-    const messageContent = document.querySelector(".message-textarea");
-    const submitButton = document.querySelector(".contact-submit-button");
- 
-
+  const firstName = document.querySelector(".first-name-textarea");
+  const lastName = document.querySelector(".last-name-textarea");
+  const phoneNumber = document.querySelector(".phone-number-textarea");
+  const email = document.querySelector(".email-textarea");
+  const messageContent = document.querySelector(".message-textarea");
+  const submitButton = document.querySelector(".contact-submit-button");
 
   submitButton.addEventListener("click", function myFunction() {
     const firstNameValue = firstName.value;
@@ -56,18 +72,21 @@ $(document).ready(function () {
     const phoneNumberValue = phoneNumber.value;
     const emailValue = email.value;
     const messageValue = messageContent.value;
-    alert(`${firstNameValue} ${lastNameValue} ${phoneNumberValue} ${emailValue} ${messageValue}`);
+    alert(
+      `${firstNameValue} ${lastNameValue} ${phoneNumberValue} ${emailValue} ${messageValue}`
+    );
   });
 
-  $(messageContent).keypress(function(e) {
-    if(e.which == 13) {
+  $(messageContent).keypress(function (e) {
+    if (e.which == 13) {
       const firstNameValue = firstName.value;
       const lastNameValue = lastName.value;
       const phoneNumberValue = phoneNumber.value;
       const emailValue = email.value;
       const messageValue = messageContent.value;
-      alert(`${firstNameValue} ${lastNameValue} ${phoneNumberValue} ${emailValue} ${messageValue}`);
+      alert(
+        `${firstNameValue} ${lastNameValue} ${phoneNumberValue} ${emailValue} ${messageValue}`
+      );
     }
   });
-
 });

@@ -124,7 +124,7 @@ a {
   padding-left: 10px;
 }
 
-.browse-link .recommended-link {
+.browse-link .recommended-link .nav-contact-link {
   position: relative;
 }
 
@@ -465,18 +465,6 @@ a {
     width: 900px;
   }
 
-  .nav-menu-div {
-    width: auto;
-  }
-
-  .nav-items-div {
-    /* width: auto; */
-  }
-
-  .nav-div {
-    /* width: auto; */
-  }
-
   .nav-link {
     font-size: large;
   }
@@ -520,7 +508,7 @@ a {
 
 @media (max-width: 767px) {
   .header-nav {
-    width: 600px;
+    width: 100%;
     justify-content: space-between;
   }
 
@@ -533,34 +521,84 @@ a {
   }
 
   .nav-bar-item {
-    display: none;
+    border: none;
   }
 
-  .fa-2x {
-    display: none;
+  .nav-bar-active {
+    display: flex;
+    margin-top: 80px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .nav-drop-menu-link {
+    font-size: 10px;
+  }
+
+  .nav-browse-drop-menu-visable {
+    width: 100%;
+    text-align: start;
+    z-index: 9997;
+  }
+
+  .nav-recommended-drop-menu-visable {
+    display: block;
+    width: 100%;
+    text-align: start;
+    z-index: 9998;
+  }
+
+  .nav-contact-drop-menu-visable {
+    width: 100%;
+    text-align: start;
+    z-index: 9999;
   }
 
   .menu-icon-div {
     display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
     height: 75px;
     width: 120px;
     justify-content: center;
     align-items: center;
   }
 
-  .fa {
+  .fa-bars {
     font-size: 30px;
     color: #009fd6;
   }
 
-  .about-us-link-div {
-    display: none;
+  .nav-bar-menu-icon-link {
+    position: relative;
+    display: block;
   }
-  .faq-link-div {
-    display: none;
+
+  .nav-bar-menu-icon-link:hover * {
+    color: #007b9a;
+    cursor: pointer;
   }
-  .location-link-div {
-    display: none;
+
+  .browse-link .recommended-link .nav-contact-link {
+    position: static;
+  }
+
+  .slider-heading {
+    color: rgb(239, 243, 247);
+    text-shadow: 2px 2px 8px #000;
+    margin-top: 70px;
+    font-size: 40px;
+  }
+
+  .slider-paragraph {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 10px #000;
+    margin-top: 35px;
+    font-size: 20 px;
+    font-weight: bold;
   }
 
   .news-div {
