@@ -122,6 +122,7 @@ a {
 .nav-div {
   padding-right: 15px;
   padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .browse-link .recommended-link .nav-contact-link {
@@ -133,6 +134,12 @@ a {
   color: rgba(255, 255, 255, 0.89);
   font-size: 20px;
   font-weight: bold;
+}
+
+.nav-home-heading {
+  display: none;
+  padding-right: 15px;
+  padding-left: 10px;
 }
 
 .nav-div:hover {
@@ -538,30 +545,43 @@ a {
   }
 
   .nav-link {
-    font-size: 13px;
+    font-size: 15px;
+  }
+
+  .nav-home-div {
+    display: none;
+  }
+
+  .nav-home-heading {
+    display: block;
+    background-color: #009fd6;
+    padding-right: 15px;
+    padding-left: 10px;
   }
 
   .nav-drop-menu-link {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .nav-browse-drop-menu-visable {
+    display: block;
     width: 100%;
+    position: relative;
     text-align: start;
-    z-index: 9997;
   }
 
   .nav-recommended-drop-menu-visable {
     display: block;
+    position: relative;
     width: 100%;
     text-align: start;
-    z-index: 9998;
   }
 
   .nav-contact-drop-menu-visable {
+    display: block;
     width: 100%;
+    position: relative;
     text-align: start;
-    z-index: 9999;
   }
 
   .menu-icon-div {
