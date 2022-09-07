@@ -41,7 +41,10 @@ $(document).ready(function () {
 
   $(".nav-bar-menu-icon-link").click(function () {
     $(".nav-bar").toggleClass("nav-bar-active");
+    $(".nav-bar").toggleClass("nav-bar-active");
   });
+
+  
 
   const body = document.body;
   const scrollUpClass = "body--scroll-up";
